@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toggle Button</title>
+    <style>
+        #toggleButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: green;
+            color: white;
+        }
+
+        .inactive {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="toggleButton" class="inactive">Inactive</button>
+
+    <script>
+        const button1 = document.getElementById('toggleButton');
+
+        button1.addEventListener('click', () => {
+            const isActive = button1.classList.contains('active');
+
+            if (isActive) {
+                button1.classList.remove('active');
+                button1.classList.add('inactive');
+                button1.textContent = 'Inactive';
+            } else {
+                button1.classList.remove('inactive');
+                button1.classList.add('active');
+                button1.textContent = 'Active';
+            }
+        });
+    </script>
+
+</body>
+</html>

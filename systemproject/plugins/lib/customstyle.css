@@ -1,0 +1,129 @@
+
+/* sidebar */
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: #289ad7;
+    max-width: 300px;
+    transition: all 0.35s ease-in-out;
+    max-width: 220px;
+    min-width: 220px;
+    
+}
+.sidebar{
+    height:100%;
+    margin:0;
+}
+
+.fixed-layout {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color:grey;
+
+}
+
+li {
+    list-style:none;
+}
+a {
+    text-decoration:none;
+}
+
+.main{
+    min-height:100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: none;
+}
+
+.sidebar-nav{
+    flex:1 1 auto;
+}
+.sidebar-logo{
+    padding: 1.15rem 1.15rem;
+    text-align:center;
+}
+a.sidebar-link{
+    padding: .625rem 1.625rem;
+    color:antiquewhite;
+    position: relative;
+    transition: all 0.35s;
+    display:block;
+    font-weight:bold;
+}
+a.sidebar-link:hover{
+    background-color:dimgray;
+}
+a.sidebar-link-in {
+    padding: .625rem 1.625rem;
+    color: antiquewhite;
+    position: relative;
+    transition: all 0.35s;
+    display: block;
+}
+
+.sidebar-footer {
+   
+   align-items:flex-end;
+
+}
+
+
+
+/* sidebar active-inactive */
+.activebtn {
+    background-color: #5990a6;
+}
+.inactivebtn {
+    background-color:none;
+}
+.sidebar-link-col {
+    background-color: #6f908d;
+}
+
+
+/* login */
+.login-cont-p {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    height: 100%; /* Set height so vertical centering is visible */
+    border: 1px solid #ccc; /* Optional, just to visualize the parent */
+}
+.login-cont-c {
+    background-color: #f0f0f0; /* Optional for visibility */
+    padding: 10px;
+    width: 300px;
+    
+}
+
+.input-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+    .input-wrapper i {
+        position: absolute;
+        left: 240px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: none;
+    }
+
+    .input-wrapper input {
+        padding-left: 10px; /* Make room for the icon */
+        margin-left: 15px;
+    }
+
+.login-label {
+    margin-left: 15px;
+}
+
+.alert-warning {
+    background-color: red;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
